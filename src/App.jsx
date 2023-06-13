@@ -9,6 +9,7 @@ import {
 import Contacto from "./components/Contacto";
 import Inicio from "./components/Inicio";
 import Nosotros from "./components/Nosotros";
+import Login from "./components/Login";
 import User from "./components/User";
 function App() {
   return (
@@ -39,6 +40,11 @@ function App() {
               </NavLink>
             </li>
             <li className="nav-item">
+              <NavLink className="nav-link" to="/login">
+                Login
+              </NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/contacto">
                 Contacto
               </NavLink>
@@ -64,6 +70,10 @@ function App() {
 
         <Route path="/nosotros">
           <Nosotros />
+        </Route>
+
+        <Route path="/login">
+          <Login />
         </Route>
 
         <Route path="/" exact>
